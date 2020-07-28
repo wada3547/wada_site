@@ -1,0 +1,311 @@
+$sp:375px;  
+
+
+@mixin sp {
+    @media (max-width: ($sp)) {
+      @content;
+    }
+  }
+
+@mixin width{
+    width: 350px;
+    margin: auto;
+    max-width: 100%;
+} 
+
+  @include sp{
+        br{
+            display: none; }
+  .header{
+      padding: 0px;
+
+      &__logo{
+       margin: 23px 0px 19px 20px;
+       }
+ 
+      &__logo img{
+        width: 20px;
+        margin: auto;
+        vertical-align: top;
+       }
+       &__logo a{
+         font-size: 13px;
+         margin: 0px 0px 0px 5px;
+       }
+       &__menu,&__contact{
+         display: none;
+       }
+       
+    #button {
+         display: block;
+         position: absolute;
+         top: 17px;
+         right: 25px;
+         cursor: pointer;
+         padding: 4px 13px 4px 13px;
+         border: 1px solid #f0f0f0;
+         border-radius: 5px;
+         outline: 0;
+     &:hover{
+         opacity: 0.7;
+         transition: .3s;
+     }
+     &:active{
+          opacity: 0.7;
+     }
+}
+    li{
+        border-bottom: 1px solid #f0f0f0;
+        text-align: center;
+        border-top: 1px solid #f0f0f0;
+        padding: 10px;
+    }
+    li a{
+        text-align: center;
+        font-size: 13px;
+        color: #333;
+        text-decoration: none;
+        display: block;
+        overflow: hidden;
+        &:hover{
+            
+            opacity: 0.7;
+        }
+    }
+  }
+
+
+  .main{ 
+         max-width: 100%;
+         margin: auto;
+         background-position: top -342px right -300px;
+
+
+      &__ttl1{
+          display: block;
+          width: 100%;
+      }
+      &__img{
+          padding-top:230px;
+      }
+      &__img img{
+          display: none;
+      }
+      &__ttl h1{
+          font-size: 24px;
+          margin-top:20px;
+          width: 100%;
+      }
+      &__txt P{
+         
+          font-size: 14px;
+          margin: 70px 116px 70px 0px;  
+      }
+      &__contact a{
+        padding: 15px 123px 15px 123px;
+          text-align: center;
+      }
+      &__area{
+        margin: 0px 0px 0px 15px;
+        width: 340px;
+      }  
+  }
+
+  .features{
+        width: 340px;
+        margin: auto;
+        padding: 200px 0px 0px 0px;
+      &__top h1{
+          font-size: 24px;
+      }
+      &__top p{
+          font-size: 14px;
+          margin-bottom: 90px;
+      }
+      &__ttl h2{
+          font-size: 20px;
+      }
+      &__box{
+          display: block; 
+      }
+       img{
+          width: 100%;
+          margin-top: 70px;
+      }
+      &__img3 img{
+          margin-left: 0px;
+      }
+      h3{
+          width: 100%;
+          font-size: 18px;
+          margin: 50px 0px 65px 0px;
+          line-height: 30px;
+      }
+      &__txt1 p{
+          margin: 0px 0px 0px ;
+          width: 100%;
+          font-size: 14px;
+          margin-bottom: 120px;
+          line-height: 1.5em;
+      }
+      &__flex{
+          flex-direction:column-reverse;
+    }
+    &__txt2 p{
+        margin: 0px 0px 0px ;
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 120px;
+        line-height: 1.5em;
+    }
+    &__txt3 p{
+        margin: 0px 0px 0px ;
+        width: 100%;
+        font-size: 14px;
+        margin-bottom: 120px;
+        line-height: 1.5em;
+  }   
+  }
+  .price{
+    padding: 80px 0px;
+      
+      h2{
+          font-size: 24px;
+      }
+      &__ttl p{
+          font-size: 14px;
+          margin-bottom: 90px;
+      }
+      &__table{
+          width: 340px;
+      }
+      td{
+        border: solid 1px #E5E5E5;
+        padding: 25px 8px 25px 6px;
+        font-size: 15px;
+      }
+      &__comment p{
+          font-size: 14px;
+      }
+  }
+  .faq{
+      width: 340px;
+      margin: auto;
+      max-width: 100%;
+      padding: 80px 0px;
+  
+     h2{
+       font-size: 24px;
+}
+   &__ttl p{
+       font-size: 14px;
+       margin-bottom: 90px;
+}
+  &__faq{
+      padding: 10px;
+  }
+  &__answer1,&__answer2,&__answer3{
+    padding: 10px;
+    line-height: 1.5em;
+  }
+}
+.blog{
+    &__ttl h2{
+        font-size: 24px;
+    }
+    &__ttl p{
+        font-size: 14px;
+        margin-bottom: 90px;
+    }
+    &__contents{
+        display: block;
+        margin: auto;
+        width:340px;
+    }
+    &__menu1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &__menu2{
+        margin: 0px 0px 30px;
+    }
+    &__txt{
+        font-size: 16px; 
+        padding-top: 5px;;
+    }
+    &__day{
+        font-size: 14px;
+    }
+}
+.swiper{
+    h2{
+        font-size: 24px;
+    }
+    &__ttl p{
+        font-size: 14px;
+        margin-bottom: 90px;
+    }
+    &-slide br{
+        display: block;
+    }
+}
+
+.form{
+    padding: 70px 0px 70px;
+    &__ttl h2{
+        font-size: 24px;
+    }
+    &__ttl p{
+        font-size: 14px;
+        margin-bottom: 90px;
+    }
+    &__txt p{
+        margin-bottom: 40px;
+    }
+    &__area{
+        width: 95%;
+        margin: auto;
+    }
+    &__name p{
+        padding-left: 30px;
+    }
+
+    &__name1 p{
+        padding: 4px 8px;
+        margin: 35px 0px 28px;
+    }
+    &__input{
+        height: 30px;
+        margin-left:30px;
+    }
+    textarea{
+        margin-left: 23px;
+    }
+}
+.footer{
+    &__ttl h2{
+        font-size: 20px;
+    }
+    &__txt{
+        display: block;
+        font-size: 14px;
+    }
+    &__txt1{
+        margin: 0px 0px 15px 0px;
+    }
+    &__txt3{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+  }
